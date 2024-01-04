@@ -9,5 +9,5 @@ YOLO_ANNOTATIONS_DIR = f'{ROOT_DIR}/yolo_annotations'
 
 # Flask application configuration
 FLASK_HOST = '0.0.0.0'
-FLASK_PORT = 5000
+FLASK_PORT = 5001
 FLASK_DEBUG = True
