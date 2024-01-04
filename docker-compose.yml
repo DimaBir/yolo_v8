@@ -1,0 +1,13 @@
+version: '3'
+services:
+  data-preprocessing-service:
+    build: ./data-preprocessing-service
+    ports:
+      - "5000:5000"
+
+  data-preprocessing-test-service:
+    build: ./data-preprocessing-test-service
+    ports:
+      - "6000:6000"
+    depends_on:
+      - data-preprocessing-service
